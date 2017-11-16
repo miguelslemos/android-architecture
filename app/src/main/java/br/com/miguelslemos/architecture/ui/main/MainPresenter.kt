@@ -1,5 +1,6 @@
 package br.com.miguelslemos.architecture.ui.main
 
+import android.util.Log
 import br.com.miguelslemos.architecture.ui.base.BasePresenter
 import javax.inject.Inject
 
@@ -8,6 +9,11 @@ import javax.inject.Inject
  */
 class MainPresenter
 @Inject
-constructor() : BasePresenter() {
+constructor() : BasePresenter<MainView>() {
 
+    fun lala() {
+        Log.d("lala", " fun lala() {" )
+        getView().teucu()
+
+    }
 }
